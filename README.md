@@ -1,0 +1,1 @@
+# embedly-merchant-cypress-automation
