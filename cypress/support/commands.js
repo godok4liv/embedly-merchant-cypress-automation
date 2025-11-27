@@ -23,26 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-import { defineConfig } from "cypress";
 
 
-module.exports = defineConfig({
-  e2e: {
-    reporter: 'cypress-mochawesome-reporter',
-    reporterOptions: {
-      charts: true,
-      reporterPageTitle: 'custom-title',
-      embeddedScreenshots: true,
-      inlineAsset: true,
-      saveAttempt: false,
-    },
 
-    baseUrl: "https://merchant-waas-dashboard-staging.embedly.ng",
 
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-      require('...cypress-mochawesome-reporter/plugin')(on);
-
-    },
-  },
-});

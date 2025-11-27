@@ -35,7 +35,7 @@ describe('Sign In Page Navigation Embedly Merchant', () => {
     .should('be.enabled')   // verify is enabled and clickable
     .click(); // click it
     cy.wait(20000);
-    cy.get("input[data-slot=input-otp]").type();
+    cy.get("input[data-slot=input-otp]").type('111111');
     cy.get('button[data-slot=button]').scrollIntoView().click().should('have.text','Continue');
     cy.get('.sooner-toast').debug().should('be.visible').should('contain','Request failed with status code 401');
     //cy.get('.confirmation-message').should('contain','Registration successful');

@@ -6,9 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Godoke",
   "license": "ISC",
-  "description": "",
+  "description": "This is embedly Merchant Ui automation with cypress",
   "devDependencies": {
     "@faker-js/faker": "^10.1.0",
     "cypress": "^15.5.0",
